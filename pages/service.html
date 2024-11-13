@@ -1,0 +1,136 @@
+<!-- Service Page  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <Title>Service</Title>
+    <link id='style-sheet' href="../styles/style4.css" rel="stylesheet">
+    <link href="../global-style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <button class="header-item" onclick="window.location.href = '../index.html'">Howdy World!</button>
+            <button class="header-item" onclick="window.location.href = './resume.html'">About Me</button>
+            <button class="header-item" onclick="window.location.href = './projects.html'">Projects</button>
+            <!-- <button class="header-item" onclick="window.location.href = './service.html'">Service</button> -->
+            <!-- <button class="header-item" onclick="window.location.href = './ai.html'">AI</button> -->
+            <!-- <button class="header-item" id='toggleBtn'>Toggle CSS</button> -->
+
+        </div>
+    </div>
+
+    <div class="content-container">
+
+        <div class='container-one'>
+            <div class='service-one'>
+                <div class='service-one-content'>
+                    <!-- <img src = "../img/charityFightNight.jpg"> -->
+                    <p>Participating in <a class='links' href="https://www.txsigmachi.org/fightnight/">College Fight
+                            Night</a> was a transformative experience that profoundly impacted my character and personal
+                        growth. The event's primary purpose was to raise funds for the <a class='links'
+                            href="https://www.cancer.gov/research/infrastructure/cancer-centers/find/utahhuntsman"
+                            target="_blank" rel="noopener noreferrer">Huntsman Cancer Institute</a> , and our collective
+                        efforts resulted in over $50,000 in donations.
+
+                        Leading up to the tournament, I dedicated weeks and months to rigorous training, pushing my
+                        physical and mental limits. <br><br>This intense preparation not only honed my boxing skills but also
+                        taught me discipline, resilience, and perseverance. I learned to overcome challenges, set goals,
+                        and work tirelessly to achieve them.
+
+                        College Fight Night wasn't just about raising funds; it was a journey of self-discovery and
+                        growth. Through this experience, I built character, developed invaluable life skills, and
+                        emerged as a stronger and more determined individual.</p>
+                </div>
+            </div>
+
+            <div class='service-two'>
+                <div class='service-two-content'>
+                    <p>
+                        During my formative years in high school, I dedicated substantial time volunteering with <a
+                            class='links' href="https://ymsl.org/about-ymsl">YMSL</a>,
+                        particularly at the local farmers' market food pantry. This experience was transformative,
+                        expanding my horizons and deepening my understanding of the real world.
+
+                        <a class='links' href="https://heartofthecitylewisville.com/i-need-help-1">The farmers' market
+                            food pantry</a> was a bustling hub of activity, a place where those in need
+                        could access fresh, locally sourced produce and essentials. Spending hours there allowed me to
+                        witness the often-hidden struggles that some individuals and families face in securing
+                        nutritious food.
+
+                        <br><br>Through this work, I not only learned the practical aspects of food distribution but also gained
+                        empathy and a greater appreciation for the importance of access to quality sustenance. It was a
+                        hands-on lesson in social responsibility and the power of community support. This experience
+                        significantly shaped my character, instilling a lifelong commitment to service and a profound
+                        understanding of the value of empathy and compassion in making a positive impact on the world.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class='container-two'>
+            <div class='title'>
+                <h1>My Community</h1>
+            </div>
+            <div class='paragraph'>
+                <p>Giving back to my community is an essential aspect of building a
+                thriving and compassionate society. My experiences in Plano, Texas, where I participated in
+                many activities like feeding the homeless during the Thanksgiving break, supporting food pantries, and engaging in donation drives, have
+                shown me the significance of participating in community service.
+
+                First and foremost, it's an opportunity to address local issues and be there for those in need.
+                By giving my time and effort, I created positive change right in front of my fellow volunteers and I. Moreover,
+                community involvement creates a sense of unity, strengthening the bonds among the near by residents and a
+                supportive network.
+
+                Volunteering has provided a sense of fulfillment, reminding myself the power I
+                have to make a difference. It has taught me empathy, broadens my perspective, and encouraged personal
+                growth. Ultimately, giving back to my community is an investment in a brighter, more compassionate
+                future for myself and anyone who takes part in it.
+                </p>
+            </div>
+        </div>
+        <!-- <div class='container-one'>
+            <a href="https://devpost.com/software/poker-payout-pro" target="_blank" rel="noreferrer noopener">
+                <div class='project-one'>
+                </div>
+            </a>
+            <a href="https://github.com/danielquerrey/DOM-Etch-A-Sketch" target="_blank" rel="noreferrer noopener">
+                <div class='project-two'>
+    
+                </div>
+            </a>
+        </div>
+        <div class='container-two'>
+            <a href="https://github.com/danielquerrey/Odin-Book" target="_blank" rel="noreferrer noopener">
+                <div class='project-three'>
+    
+                </div>
+            </a>
+        </div> -->
+
+
+    </div>
+
+    <script>
+        function toggleCSS(e) {
+            const curr_sheet = document.querySelector("#style-sheet");
+            if (curr_sheet.getAttribute('href') == "../styles/style4.css") {
+                curr_sheet.setAttribute('href', "../toggleStyles/style4Toggle.css");
+            }
+            else {
+                curr_sheet.setAttribute('href', "../styles/style4.css");
+            }
+        }
+
+        const btn = document.querySelector("#toggleBtn");
+        btn.addEventListener('click', toggleCSS);
+
+    </script>
+</body>
+
+</html>

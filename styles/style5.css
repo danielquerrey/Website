@@ -1,0 +1,64 @@
+/* style5.css */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+    background-image: url(../img/hero-pic.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.place {
+    flex-basis: calc(20% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 5px solid maroon;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: maroon;
+}
+
+p {
+    margin-top: 10px;
+}
+
+/* Additional styles for the textbox */
+.prompt-summary {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.textbox {
+    width: 100%;
+    height: 200px;
+}

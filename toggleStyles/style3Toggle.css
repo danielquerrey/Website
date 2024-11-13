@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background: linear-gradient(454deg,rgb(89, 195, 247),rgb(160, 210, 235)); */
+    background-color: maroon;
+    display :flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    transition:1s;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: black; */
+    margin-top: 3vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 90vw;
+    height: 80vh;
+}
+
+
+.container-one {
+    order: 3;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left:1vw;
+    margin-right:1vw;
+    margin-top :1vh;
+    margin-bottom: 1vh; 
+    /* background-color: blue; */
+    height:auto;
+    width: 27vw;
+    /* height: 30px;
+    width: 30px; */
+}
+
+
+
+.project-one {
+    /* background-color: white; */
+    display:flex;
+    justify-content: center;
+
+    /* background-image: url(../img/pokerPayoutProBackground.jpg); */
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:5px solid goldenrod;
+    border-radius: 20px;
+    position: relative;
+    width: 27vw;
+    height: 35vh;
+    transition : .5s;
+
+}
+
+.project-one:hover {
+    transition : .5s;
+    scale:1.1;
+
+}
+
+.project-two {
+    /* background-color: white; */
+    background-color: white;
+    /* background-image: url(../img/DOM-model.png); */
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:5px solid goldenrod;
+    border-radius: 20px;
+    position: relative;
+    width: 27vw;
+    height: 35vh;
+    transition : .5s;
+
+}
+
+.project-two:hover {
+    transition : .5s;
+    scale:1.1;
+
+}
+
+.container-two {
+    order:1;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: pink; */
+    /* margin-left:1vw; */
+    margin-right:1vw;
+    margin-top :1vh;
+    margin-bottom: 1vh; 
+    height:auto;
+    width: 27vw;
+}
+
+.project-three {
+    /* background-color: white; */
+    /* background-image: url(../img/OdinProject.png); */
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:5px solid goldenrod;
+    border-radius: 20px;
+    position: relative;
+    width: 27vw;
+    height: 35vh;
+    transition : .5s;
+
+}
+
+.project-three:hover {
+    transition : .5s;
+    scale:1.1;
+
+}
+
+.container-three {
+    order:2;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    /* margin-left:1vw; */
+    margin-right:1vw;
+    margin-top :1vh;
+    margin-bottom: 1vh; 
+    height:auto;
+    width: 27vw;
+}
+
+.link-one {
+    /* background-color: white; */
+    /* background-image: url(../img/gitHubLogo.png); */
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:5px solid goldenrod;
+    border-radius: 20px;
+    position: relative;
+    width: 27vw;
+    height: 15vh;
+    /* padding:5px; */
+    transition : .5s;
+
+
+}
+
+.link-one:hover {
+    transition : .5s;
+    scale:1.1;
+
+}
+
+.link-two {
+    /* background-color: white; */
+    background-color: white;
+    /* background-image: url(../img/LinkedIn_Logo.svg.png); */
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:5px solid goldenrod;
+    border-radius: 20px;
+    position: relative;
+    width: 27vw;
+    height: 15vh;
+    /* padding:5px; */
+    transition : .5s;
+
+}
+
+.link-two:hover {
+    transition : .5s;
+    scale:1.1;
+
+}

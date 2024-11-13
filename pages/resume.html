@@ -1,0 +1,81 @@
+<!-- Qualifications Page  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Resume</title>
+        <link id="style-sheet" href="../styles/style2.css" rel="stylesheet" />
+        <link href="../global-style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="header-container">
+            <div class="header">
+                <button class="header-item" onclick="window.location.href = '../index.html'">Howdy World!</button>
+                <button class="header-item" onclick="window.location.href = './resume.html'">About Me</button>
+                <button class="header-item" onclick="window.location.href = './projects.html'">Projects</button>
+                <!-- <button class="header-item" onclick="window.location.href = './service.html'">Service</button> -->
+                <!-- <button class="header-item" onclick="window.location.href = './ai.html'">AI</button> -->
+                <!-- <button class="header-item" id='toggleBtn'>Toggle CSS</button> -->
+            </div>
+        </div>
+        <div class="subheader-container">
+            <div class="subheader-item">
+                <!-- subheader link text for resume -->
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="content-item" id="resume-wrapper">
+                <!-- <object data="../resume/Fall_23_Daniel_Querrey_Resume.pdf" type="application/pdf" width="100%" height="100%"></object> -->
+                <img id='resume' src="../resume/QuerreyDanielFall24Resume-1.png">
+            </div>
+            <!-- <div class="content-item" id="text-boxes">
+                <div id="top-box">
+                    <h1 id="top-header">Technologies</h1>
+                    <p id="top-paragraph">
+                        Java<br />
+                        JavaScript<br />
+                        Python<br />
+                        C++<br />
+                        Git<br />
+                        HTML<br />
+                        CSS<br />
+                        NodeJS<br />
+                        React<br />
+                        MongoDB<br />
+                        Node.js<br />
+                        REST<br />
+                        OOP<br />
+                        Linux<br />
+                        SQL<br />
+                        AWS
+                    </p>
+                </div>
+                <div id="btm-box">
+                    <h1 id="btm-header"></h1>
+                    <p id="btm-paragraph">
+                        I'm truly passionate about two exciting realms in the tech world: cybersecurity and full-stack development. Cybersecurity, to me, is a thrilling battle against digital threats,
+                        coupled with the ethical responsibility of safeguarding data and privacy. On the flip side, full-stack development allows me to play the role of a digital architect, crafting
+                        both user-friendly interfaces and the behind-the-scenes magic. These interests aren't just personal; they're also my gateway to a dynamic and in-demand career in the
+                        ever-evolving tech landscape.
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        <div class="footer-container"></div>
+
+        <script>
+            function toggleCSS(e) {
+                const curr_sheet = document.querySelector("#style-sheet");
+                if (curr_sheet.getAttribute("href") == "../styles/style2.css") {
+                    curr_sheet.setAttribute("href", "../toggleStyles/style2Toggle.css");
+                } else {
+                    curr_sheet.setAttribute("href", "../styles/style2.css");
+                }
+            }
+
+            const btn = document.querySelector("#toggleBtn");
+            btn.addEventListener("click", toggleCSS);
+        </script>
+    </body>
+</html>

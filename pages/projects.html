@@ -1,0 +1,77 @@
+<!-- Technical Portfolio Page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <Title>Projects</Title>
+    <link id='style-sheet' href="../styles/style3.css" rel="stylesheet">
+    <link href="../global-style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">
+            <button class="header-item" onclick="window.location.href = '../index.html'">Howdy World!</button>
+            <button class="header-item" onclick="window.location.href = './resume.html'">About Me</button>
+            <button class="header-item" onclick="window.location.href = './projects.html'">Projects</button>
+            <!-- <button class="header-item" onclick="window.location.href = './service.html'">Service</button> -->
+            <!-- <button class="header-item" onclick="window.location.href = './ai.html'">AI</button> -->
+            <!-- <button class="header-item" id='toggleBtn'>Toggle CSS</button> -->
+
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class='container-one'>
+            <a href="https://github.com/danielquerrey/PokerPayoutPro" target="_blank" rel="noreferrer noopener">
+                <img src="../img/poker payout pro 2.png" class='project-one'>
+            </a>
+            <a href="https://github.com/danielquerrey/Seam-Carving" target="_blank" rel="noreferrer noopener">
+                <img src="../img/carving.adb7fe1ac7b4b4a83d73.gif" class='project-two'>
+            </a>
+        </div>
+        <div class='container-two'>
+            <a href="https://github.com/danielquerrey/Cloud-Based-POS-System" target="_blank" rel="noreferrer noopener">
+                <img src="../img/pos-file.png" class='project-three'>
+            </a>
+        </div>
+        <div class='container-three'>
+            <a href="https://github.com/danielquerrey" target="_blank" rel="noreferrer noopener">
+                <img src="../img/gitHubLogo.png" class='link-one'>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-querrey/" target="_blank" rel="noreferrer noopener">
+                <img src="../img/LinkedIn_Logo.svg.png" class='link-two'>
+
+            </a>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <script>
+        function toggleCSS(e) {
+            const curr_sheet = document.querySelector("#style-sheet");
+            if (curr_sheet.getAttribute('href') == "../styles/style3.css") {
+                curr_sheet.setAttribute('href', "../toggleStyles/style3Toggle.css");
+            }
+            else {
+                curr_sheet.setAttribute('href', "../styles/style3.css");
+            }
+        }
+
+        const btn = document.querySelector("#toggleBtn");
+        btn.addEventListener('click', toggleCSS);
+
+    </script>
+</body>
+
+</html>

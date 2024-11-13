@@ -1,0 +1,157 @@
+/* This contains the navigational bar styles and page background */
+@media (min-width: 800px) {
+    .links:visited {
+        color: inherit;
+    }
+
+    .links:hover {
+        color: maroon;
+    }
+
+    div.header-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.header {
+        display: flex;
+        background-color: transparent;
+        /* max-width: 400px; */
+        justify-content: space-between;
+        margin: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        /* background-color: white; */
+        border-style: double;
+        border-color: goldenrod;
+        border-width: 5px;
+
+
+        border-radius: 50px;
+        transition: 1s;
+    }
+
+    div.header:hover {
+        transition: 1s;
+        scale: 1.05;
+    }
+
+    button.header-item {
+        background-color: transparent;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: black;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+
+        /* border-bottom-color:black;
+    border-left-color: white;
+    border-right-color: white;
+    border-top-color: white; */
+    }
+
+    button:hover {
+        scale: 1.1;
+        transition: .5s;
+        border-color: goldenrod;
+        background-color: black;
+        color: white;
+    }
+
+}
+@media (max-width: 799px) {
+    .links:visited {
+        color: inherit;
+    }
+
+    .links:hover {
+        color: maroon;
+    }
+
+    div.header-container {
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        width:100vw;
+    }
+
+    div.header {
+        display: flex;
+        /* background-color: transparent; */
+        /* max-width: 400px; */
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 7vh;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        /* margin: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 50px;
+        padding-right: 50px; */
+        /* background-color: white; */
+        border-color: goldenrod;
+        border-style:double;
+        border-width: 5px;
+
+        padding-right: 2vw;
+        padding-left: 2vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        border-radius: 50px;
+        transition: 1s;
+    }
+
+    div.header:hover {
+        transition: 1s;
+        scale: 1.05;
+    }
+
+    button.header-item {
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        font-family: "Share Tech", sans-serif;
+        background-color: whitesmoke;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        height: 4vh;
+        padding:auto;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        margin: 0px;
+        /* margin-right: 3vw; */
+        /* margin-left: 3vw; */
+        padding-top: 0px;
+        /* margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 3px;
+        padding-bottom: 3px; */
+
+        /* border-bottom-color:black;
+    border-left-color: white;
+    border-right-color: white;
+    border-top-color: white; */
+    }
+
+    button{
+        scale: 1;
+        transition: .5s;
+    }
+
+    button:active {
+        scale: 1.1;
+        transition: .5s;
+        background-color: black;
+        color: white;
+        border-color: goldenrod;
+    }
+}

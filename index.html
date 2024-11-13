@@ -1,0 +1,67 @@
+<!-- Landing Area  -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- toggleStyles/style1Toggle.css -->
+    <!-- href="styles/style1.css" -->
+
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Daniel Querrey | Hello World!</title>
+
+        <link id="style-sheet" href="styles/style1.css" rel="stylesheet" />
+        <link href="global-style.css" rel="stylesheet" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+        </style>
+    </head>
+
+    <body>
+        <div class="header-container">
+            <div class="header">
+                <button class="header-item" onclick="window.location.href = './index.html'" style="">Howdy World!</button>
+                <button class="header-item" onclick="window.location.href = './pages/resume.html'">About Me</button>
+                <button class="header-item" onclick="window.location.href = './pages/projects.html'">Projects</button>
+                <!-- <button class="header-item" onclick="window.location.href = './pages/service.html'" style="margin-right: 5vw">Service</button> -->
+                <!-- <button class="header-item" onclick="window.location.href = './pages/ai.html'">AI</button> -->
+                <!-- <button class="header-item" id='toggleBtn'>Toggle CSS</button> -->
+                <!-- margin-left: 5vw REMOVED FROM HOWDY WORLD BUTTON -->
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="" id="pfp-container">
+                <img src="img/Querrey_Daniel.jpeg" id="pfp" />
+            </div>
+            <div class="" id="bio">
+                <h1 id="bioHeader" style="letter-spacing: 3px;">Daniel Querrey</h1>
+                <p id="bioText">
+                    <strong>A Bit About Me.</strong> <br />I am an undergraduate student at <strong>Texas A&M University</strong>.<br />
+                    <br/>Currently, I am pursuing a degree in <strong>Computer Science</strong>
+                    under the Department of Engineering. <br/><br/>I spend most
+                    of my time focusing on my academics with my spare time
+                    spent on passion projects, competing for the
+                    <strong
+                        ><a class="links" href="https://google.com" target="_blank" rel="noreferrer noopener"
+                            >Texas
+                            A&M Wake Boarding team</a
+                        ></strong
+                    >, and various school organizations.
+                </p>
+            </div>
+        </div>
+        <div class="footer-container"></div>
+
+        <script>
+            function toggleCSS(e) {
+                const curr_sheet = document.querySelector("#style-sheet");
+                if (curr_sheet.getAttribute("href") == "styles/style1.css") {
+                    curr_sheet.setAttribute("href", "toggleStyles/style1Toggle.css");
+                } else {
+                    curr_sheet.setAttribute("href", "styles/style1.css");
+                }
+            }
+
+            const btn = document.querySelector("#toggleBtn");
+            btn.addEventListener("click", toggleCSS);
+        </script>
+    </body>
+</html>

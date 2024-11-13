@@ -1,0 +1,188 @@
+body {
+    /* background: linear-gradient(454deg,rgb(89, 195, 247),rgb(160, 210, 235)); */
+    /* background-color: rgb(241, 227, 206); */
+    /* position:relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto; */
+    background-image: url(../img/hero-pic.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 800px) {
+    #background-pic {
+        position: absolute;
+        opacity: 0%;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        /* height: auto; */
+    }
+
+    /* .content-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        transition: 1s;
+    } */
+
+    #bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+        font-family: "Share Tech", sans-serif;
+        font-size: auto;
+
+        /* margin: 50px; */
+        height: 70vh;
+        width: 25vw;
+        margin-left: 2vw;
+        transition: 1s;
+        /* margin-top: 10px; */
+        font-family: "Share Tech", sans-serif;
+        font-size: large;
+    }
+    /* .content-item:hover {
+        margin: 40px;
+        transition: 1s;
+        scale: 1.1;
+    } */
+
+    #pfp-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 50px; */
+        height: 70vh;
+        width: 25vw;
+        transition: 1s;
+    }
+
+    #pfp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 1s;
+
+        width: 25vw;
+        border-radius: 30%;
+        scale: .8;
+    }
+
+    #bioText {
+        background-color: white;
+        border: 5px solid black;
+        border-radius: 50px;
+        /* height: auto; */
+        /* width: 70vw; */
+        margin: 0px;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+
+        transition: .5s;
+        scale: 1;
+    }
+
+    #bioText:hover {
+        scale:1.1;
+        transition: .5s;
+    }
+
+    #pfp:hover {
+        scale:.9;
+        transition: .5s;
+    }
+
+}
+
+@media (max-width: 799px) {
+    #background-pic {
+        position: absolute;
+        opacity: 0%;
+        z-index: -1;
+        width: 100%;
+        height: auto;
+        transition: 0.5s;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 80vh;
+        /* height: auto; */
+    }
+
+    #pfp-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 50px; */
+        height: 50vh;
+        width: 60vw;
+        transition: 1s;
+        width: 100%;
+    }
+
+    #pfp {
+        scale: 0.9;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    #bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* margin: 50px; */
+        height: 40vh;
+        width: auto;
+        transition: 1s;
+        /* margin-top: 10px; */
+        font-family: "Share Tech", sans-serif;
+        font-size: auto;
+    }
+
+    #bioHeader {
+        margin-bottom: 5vh;
+        margin-top: 3vh;
+    }
+
+    #bioText {
+        background-color: white;
+        border: 5px solid black;
+        border-radius: 50px;
+        height: auto;
+        width: 70vw;
+        margin: 0px;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}
