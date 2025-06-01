@@ -1,9 +1,6 @@
 <!-- Landing Area  -->
 <!DOCTYPE html>
 <html lang="en">
-    <!-- toggleStyles/style1Toggle.css -->
-    <!-- href="styles/style1.css" -->
-
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
         <title>Daniel Querrey | Hello World!!</title>
@@ -18,36 +15,27 @@
     <body>
         <div class="header-container">
             <div class="header">
-                <button class="header-item" onclick="window.location.href = './index.html'" style="">Howdy World!</button>
+                <button class="header-item" onclick="window.location.href = './index.html'">Howdy World!</button>
                 <button class="header-item" onclick="window.location.href = './pages/resume.html'">About Me</button>
                 <button class="header-item" onclick="window.location.href = './pages/projects.html'">Projects</button>
-                <!-- <button class="header-item" onclick="window.location.href = './pages/service.html'" style="margin-right: 5vw">Service</button> -->
-                <!-- <button class="header-item" onclick="window.location.href = './pages/ai.html'">AI</button> -->
-                <!-- <button class="header-item" id='toggleBtn'>Toggle CSS</button> -->
-                <!-- margin-left: 5vw REMOVED FROM HOWDY WORLD BUTTON -->
             </div>
         </div>
+
         <div class="content-container">
-            <div class="" id="pfp-container">
+            <div id="pfp-container">
                 <img src="img/Querrey_Daniel.jpeg" id="pfp" />
             </div>
-            <div class="" id="bio">
+            <div id="bio">
                 <h1 id="bioHeader" style="letter-spacing: 3px;">Daniel Querrey</h1>
                 <p id="bioText">
-                    <strong>A Bit About Me.</strong> <br />I am NOT3 an undergraduate student at <strong>Texas A&M University</strong>.<br />
-                    <br/>Currently, I am pursuing a degree in <strong>Computer Science</strong>
-                    under the Department of Engineering. <br/><br/>I spend most
-                    of my time focusing on my academics with my spare time
-                    spent on passion projects, competing for the
-                    <strong
-                        ><a class="links" href="https://google.com" target="_blank" rel="noreferrer noopener"
-                            >Texas
-                            A&M Wake Boarding team</a
-                        ></strong
-                    >, and various school organizations.
+                    <strong>A Bit About Me.</strong> <br />
+                    I recently graduated <strong>Cum Laude</strong> from <strong>Texas A&M University</strong> with a degree in <strong>Computer Science</strong> under the College of Engineering.<br /><br />
+                    This July, I’ll be starting full-time as a <strong>Software Engineer</strong> at <strong>JPMorgan Chase</strong> in Dallas, Texas.<br /><br />
+                    I enjoy building creative projects, solving meaningful problems, and collaborating with others. Outside of tech, I’ve competed with the <strong><a class="links" href="https://google.com" target="_blank" rel="noreferrer noopener">Texas A&M Wakeboarding Team</a></strong> and have been actively involved in campus organizations.
                 </p>
             </div>
         </div>
+
         <div class="footer-container"></div>
 
         <script>
@@ -61,7 +49,7 @@
             }
 
             const btn = document.querySelector("#toggleBtn");
-            btn.addEventListener("click", toggleCSS);
+            if (btn) btn.addEventListener("click", toggleCSS);
         </script>
     </body>
 </html>
